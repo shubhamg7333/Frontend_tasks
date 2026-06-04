@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🌟 Responsive Image Gallery 🌟</h1>
+
+    <div class="filter-buttons">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('animals')">Animals</button>
+        <button onclick="filterImages('robots')">Robots</button>
+        <button onclick="filterImages('city')">City</button>
+    </div>
+
+    <div class="gallery">
+
+        <!-- Nature -->
+
+        <div class="image nature">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600" alt="Nature">
+        </div>
+
+        <div class="image nature">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600" alt="Forest">
+        </div>
+
+        <!-- Animals -->
+
+        <div class="image animals">
+            <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=600" alt="Fox">
+        </div>
+
+        <div class="image animals">
+            <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=600" alt="Dog">
+        </div>
+
+        <!-- Robots -->
+
+        <div class="image robots">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600" alt="Robot">
+        </div>
+
+        <div class="image robots">
+            <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=600" alt="AI Robot">
+        </div>
+
+        <!-- City -->
+
+        <div class="image city">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600" alt="City">
+        </div>
+
+        <div class="image city">
+            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600" alt="Urban City">
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+
+    <div class="lightbox" id="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button class="prev">&#10094;</button>
+
+        <img class="lightbox-img" src="" alt="">
+
+        <button class="next">&#10095;</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

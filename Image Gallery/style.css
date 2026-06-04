@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    padding:20px;
+    text-align:center;
+
+    background:linear-gradient(
+        135deg,
+        #1e3c72,
+        #2a5298,
+        #6dd5ed
+    );
+}
+
+h1{
+    color:white;
+    margin-bottom:25px;
+    font-size:3rem;
+    text-shadow:2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.filter-buttons{
+    margin-bottom:25px;
+}
+
+.filter-buttons button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    border-radius:25px;
+    background:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.filter-buttons button:hover{
+    background:#ffcc00;
+    transform:translateY(-3px);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,250px));
+    justify-content:center;
+    gap:20px;
+}
+
+.image img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    cursor:pointer;
+    transition:0.4s ease;
+}
+
+.image img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    cursor:pointer;
+    transition:0.4s ease;
+}
+
+.image:hover img{
+    transform:scale(1.1);
+    filter:brightness(80%);
+}
+
+.lightbox{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.lightbox-img{
+    width:80%;
+    max-width:800px;
+    border-radius:10px;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:white;
+    font-size:45px;
+    cursor:pointer;
+}
+
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:white;
+    padding:12px 18px;
+    font-size:28px;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+.prev{
+    left:20px;
+}
+
+.next{
+    right:20px;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .lightbox-img{
+        width:95%;
+    }
+}

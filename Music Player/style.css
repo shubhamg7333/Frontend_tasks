@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2,
+        #6b46c1
+    );
+}
+
+.music-player{
+    width:420px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+
+    padding:30px;
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+
+.music-player h1{
+    color:white;
+    margin-bottom:20px;
+    letter-spacing:2px;
+    text-shadow:0 0 10px rgba(255,255,255,0.5);
+}
+
+/* Album Art */
+
+.album-art{
+    width:220px;
+    height:220px;
+    margin:0 auto 20px;
+
+    border-radius:20px;
+    object-fit:cover;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Song Info */
+
+.song-info h2{
+    color:white;
+    margin-bottom:8px;
+}
+
+.song-info p{
+    color:#e5e7eb;
+    margin:5px 0;
+}
+
+/* Progress Bar */
+
+#progress{
+    width:100%;
+    margin:20px 0;
+    cursor:pointer;
+}
+
+/* Controls */
+
+.controls{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin:25px 0;
+}
+
+.controls button{
+    width:65px;
+    height:65px;
+
+    border:none;
+    border-radius:50%;
+
+    font-size:22px;
+    cursor:pointer;
+
+    background:white;
+    transition:0.3s;
+}
+
+.controls button:hover{
+    transform:scale(1.1);
+    background:#fbbf24;
+}
+
+/* Volume */
+
+.volume-container{
+    margin-top:15px;
+    color:white;
+}
+
+#volume{
+    width:100%;
+    margin-top:10px;
+}
+
+/* Playlist */
+
+.playlist{
+    margin-top:25px;
+    text-align:left;
+}
+
+.playlist h3{
+    color:white;
+    margin-bottom:10px;
+}
+
+.playlist ul{
+    list-style:none;
+}
+
+.playlist li{
+    color:white;
+    padding:12px;
+    margin-bottom:8px;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.1);
+
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.playlist li:hover{
+    background:rgba(255,255,255,0.25);
+    transform:translateX(5px);
+}
+
+/* Mobile */
+
+@media(max-width:500px){
+
+    .music-player{
+        width:95%;
+        padding:20px;
+    }
+
+    .album-art{
+        width:180px;
+        height:180px;
+    }
+
+}
