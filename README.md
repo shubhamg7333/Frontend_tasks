@@ -1,4 +1,4 @@
-# CodeAlpha_tasks
-My CodeAlpha Project Repository.
+# Frontend_tasks
+My Frontend Project Repository.
 <br>
 Author-Shubham Gupta 
